@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Little Learners</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="page-wrap">
+    <!-- Top Banner (фон-картинка) -->
+    <a href="#" class="top-banner" aria-label="Admission is Open">
+      <span class="top-banner__text"></span>
+      <i class="icon-arrow-right top-banner__arrow"></i>
+    </a>
+
+    <!-- NAVBAR CARD: [logo | spacer | burger] -->
+    <div class="navbar-card">
+      <div class="navbar-card__left">
+        <img src="images/shape-14 (1).svg" alt="Little Learners Logo" class="logo-img"/>
+        <span class="brand">Little Learners</span>
+      </div>
+      <div class="navbar-card__spacer" aria-hidden="true"></div>
+      <button class="navbar-card__burger" id="burger" aria-label="Open menu">
+        <img src="images/Icon.svg" alt="">
+      </button>
+    </div>
+
+    <!-- BURGER MENU PANEL -->
+    <nav class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <button class="mobile-menu__close" id="closeMenu" aria-label="Close menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <ul class="mobile-menu__list">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Academics</a></li>
+        <li><a href="#">Student Life</a></li>
+        <li><a href="#">Admissions</a></li>
+      </ul>
+      <div class="mobile-menu__socials">
+        <i class="icon-fb"></i>
+        <i class="icon-ig"></i>
+        <i class="icon-yt"></i>
+      </div>
+    </nav>
+    <div class="mobile-menu__backdrop" id="menuBackdrop" aria-hidden="true"></div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="page-wrap">
+
+    <!-- HERO CARD -->
+    <section class="hero-card">
+      <div class="hero-card__img">
+        <img src="images/Image Container.png" alt="Kids learning"/>
+      </div>
+      <div class="hero-card__body">
+        <h1 class="h1">Where Young Minds Blossom and Dreams Take Flight</h1>
+        <p class="muted">
+          Our school fosters a nurturing environment where children learn, explore and thrive every day.
+        </p>
+        <button class="btn btn--primary">Get Started <i class="icon-arrow-right"></i></button>
+      </div>
+    </section>
+
+    <!-- STATS (три капсули) -->
+    <section class="stats">
+      <article class="stat">
+        <h3 class="stat__num">+7000</h3>
+        <p class="stat__label">Happy Students</p>
+      </article>
+      <article class="stat">
+        <h3 class="stat__num">+37</h3>
+        <p class="stat__label">Experienced Teachers</p>
+      </article>
+      <article class="stat">
+        <h3 class="stat__num">+15</h3>
+        <p class="stat__label">Years of Excellence</p>
+      </article>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="section">
+      <h2 class="section__title">Our Benefits</h2>
+      <div class="benefits">
+        <article class="benefit">
+          <i class="icon-habit benefit__icon"><img src="images/Icon (1).svg" alt=""></i>
+          <div>
+            <h3 class="benefit__title">Habit & Concept Approach</h3>
+            <p class="benefit__desc">Building strong foundations through daily practice and discovery.</p>
+          </div>
+        </article>
+        <article class="benefit">
+          <i class="icon-library benefit__icon"><img src="images/crown.fill.svg" alt=""></i>
+          <div>
+            <h3 class="benefit__title">Experienced Library</h3>
+            <p class="benefit__desc">Rich collection of age-appropriate books and resources.</p>
+          </div>
+        </article>
+        <article class="benefit">
+          <i class="icon-nurturing benefit__icon"><img src="images/Icon (2).svg" alt=""></i>
+          <div>
+            <h3 class="benefit__title">Nurturing Environment</h3>
+            <p class="benefit__desc">Safe, warm and inclusive atmosphere.</p>
+          </div>
+        </article>
+        <article class="benefit">
+          <i class="icon-playground benefit__icon"><img src="images/Icon (3).svg" alt=""></i>
+          <div>
+            <h3 class="benefit__title">Play-based Learning</h3>
+            <p class="benefit__desc">Hands-on activities that spark curiosity and joy.</p>
+          </div>
+        </article>
+        <article class="benefit">
+          <i class="icon-attention benefit__icon"><img src="images/Icon (4).svg" alt=""></i>
+          <div>
+            <h3 class="benefit__title">Individual Attention</h3>
+            <p class="benefit__desc">Personalized support for every child’s pace.</p>
+          </div>
+        </article>
+        <article class="benefit">
+          <i class="icon-investment benefit__icon"><img src="images/Union.svg" alt=""></i>
+          <div>
+            <h3 class="benefit__title">Parent Involvement</h3>
+            <p class="benefit__desc">Open communication and regular engagement.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section">
+      <h2 class="section__title">Our Testimonials</h2>
+
+      <div class="testimonials">
+        <button class="ts__nav ts__nav--prev" id="tsPrev" aria-label="Prev"><i class="icon-chevron-left"><img src="images/Icon (5).svg" alt=""></i></button>
+
+        <div class="ts__track" id="tsTrack">
+          <article class="ts__item">
+            <div class="ts__avatar"><i class="icon-user"><img src="images/Profile Container.svg" alt=""></i></div>
+            <p class="ts__text">“My child has grown so much academically and socially since joining this school!”</p>
+            <div class="ts__author">— Jenifer G</div>
+          </article>
+          <article class="ts__item">
+            <div class="ts__avatar"><i class="icon-user"><img src="images/people_02.png" alt=""></i></div>
+            <p class="ts__text">“Teachers truly care and the environment is incredibly supportive.”</p>
+            <div class="ts__author">— Mark T</div>
+          </article>
+          <article class="ts__item">
+            <div class="ts__avatar"><i class="icon-user"><img src="images/people_03.png" alt=""></i></div>
+            <p class="ts__text">“Wonderful community and engaging activities every week.”</p>
+            <div class="ts__author">— Aisha K</div>
+          </article>
+        </div>
+
+        <button class="ts__nav ts__nav--next" id="tsNext" aria-label="Next"><i class="icon-chevron-right"><img src="images/Icon (6).svg" alt=""></i></button>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <h2 class="section__title">Frequently Asked Questions</h2>
+
+      <div class="faq">
+        <details class="faq__item">
+          <summary><span>Is there a transportation facility?</span> <i class="icon-plus"><img src="images/Icon.png" alt=""></i></summary>
+          <div class="faq__content">Yes, we provide safe and reliable transportation for students across major routes.</div>
+        </details>
+        <details class="faq__item">
+          <summary><span>What is the student-teacher ratio?</span> <i class="icon-plus"><img src="images/Icon.png" alt=""></i></summary>
+          <div class="faq__content">Average ratio is 20:1 to ensure individual attention.</div>
+        </details>
+        <details class="faq__item">
+          <summary><span>Does the school offer extracurricular activities?</span> <i class="icon-plus"><img src="images/Icon.png" alt=""></i></summary>
+          <div class="faq__content">Yes, including sports, arts, music and clubs.</div>
+        </details>
+        <details class="faq__item">
+          <summary><span>How do I apply for admissions?</span> <i class="icon-plus"><img src="images/Icon.png" alt=""></i></summary>
+          <div class="faq__content">Submit the online form and our team will contact you with the next steps.</div>
+        </details>
+        <details class="faq__item">
+          <summary><span>How is the safety of students ensured?</span> <i class="images"><img src="images/Icon.png" alt=""></i></summary>
+          <div class="faq__content">CCTV, controlled access, trained staff and regular safety drills.</div>
+        </details>
+      </div>
+    </section>
+
+    <!-- NAVIGATE THROUGH PAGES -->
+    <section class="section">
+      <h2 class="section__title">Navigate through our Pages</h2>
+      <p class="muted center">Discover more about our school through the sections below.</p>
+
+      <div class="nav-cards">
+        <article class="nav-card">
+          <header class="nav-card__head"><span>About Us</span></header>
+          <p>Learn about our mission, vision and the values we nurture.</p>
+          <a class="btn btn--ghost" href="#">See Page <i class="icon-arrow-right"></i></a>
+        </article>
+
+        <article class="nav-card">
+          <header class="nav-card__head"><span>Student Life</span></header>
+          <p>Activities, events and a day-in-the-life at Little Learners.</p>
+          <a class="btn btn--ghost" href="#">See Page <i class="icon-arrow-right"></i></a>
+        </article>
+
+        <article class="nav-card">
+          <header class="nav-card__head"><span>Admissions</span></header>
+          <p>Find entry requirements, timelines and how to apply.</p>
+          <a class="btn btn--ghost" href="#">See Page <i class="icon-arrow-right"></i></a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top page-wrap">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <img src="images/shape-14 (1).svg" alt="" />
+          <span>Little Learners</span>
+        </div>
+        <p class="muted">Nurturing bright minds with curiosity, care and creativity.</p>
+        <div class="footer__socials">
+          <i class="icon-fb"></i>
+          <i class="icon-ig"></i>
+          <i class="icon-yt"></i>
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <div>
+          <h4>Quick Links</h4>
+          <a href="#">About Us</a>
+          <a href="#">Academics</a>
+          <a href="#">Student Life</a>
+          <a href="#">Admissions</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="#">info@littlelearners.edu</a>
+          <a href="#">+380 00 000 00 00</a>
+          <a href="#">123, Learning St, Kyiv</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="page-wrap footer__bottom-in">
+        <span>© 2025 Little Learners. All rights reserved.</span>
+        <div class="footer__badges">
+          <i class="icon-shield"></i>
+          <i class="icon-lock"></i>
+          <i class="icon-credit-card"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
